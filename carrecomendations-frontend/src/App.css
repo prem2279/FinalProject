@@ -1,0 +1,54 @@
+/* General App Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling on the app container */
+}
+
+/* Header */
+.header {
+  background: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  height: 7vh; /* 10% of viewport height */
+  flex-shrink: 0; /* Prevents shrinking */
+  position: fixed; /* Fix header at top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Scrollable content */
+.content {
+  flex: 1; /* Takes remaining space */
+  overflow-y: auto; /* Enables vertical scrolling */
+  margin-top: 7vh; /* Pushes content below fixed header */
+  margin-bottom: 5vh; /* Pushes content above fixed footer */
+  background: transparent;
+  /* background-image: url('https://img.freepik.com/premium-vector/set-cars_602006-3233.jpg');
+  background-size: inherit; */
+  background-position: center;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  height: 5vh; /* 5% of viewport height */
+  flex-shrink: 0; /* Prevents shrinking */
+  position: fixed; /* Fix footer at bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}

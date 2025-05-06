@@ -1,0 +1,111 @@
+.preferences {
+  padding: 2rem;
+  padding-bottom: 1rem;
+  z-index: 10;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  max-width: 800px;
+  margin: 0 auto;
+  /* margin-top: 10vh; */
+  margin-bottom: 5vh;
+  position: relative;
+  height: -webkit-fill-available;
+}
+
+
+.preferences h1 {
+  background: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  color: white;
+  display: inline-block; /* Background wraps only the text */
+  padding: 5px 15px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the element */
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+.preference-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.preference-form label {
+  background: rgba(0, 0, 0, 0.4); /* Dark background with some transparency */
+  color: white;
+  display: inline-block; /* Background wraps only around the text */
+  padding: 3px 8px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  
+  }
+
+
+.preference-form select,
+.preference-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preference-form select:focus,
+.preference-form input:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+  outline: none;
+}
+
+.preference-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.preference-form button:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .preferences {
+    padding: 1rem;
+    margin-top: 8vh; /* Adjust for smaller screens */
+    margin-bottom: 4vh; /* Adjust for smaller screens */
+  }
+
+  .preferences h1 {
+    font-size: 2rem;
+  }
+
+  .preference-form label {
+    font-size: 1rem;
+  }
+
+  .preference-form select,
+  .preference-form input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .preference-form button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+

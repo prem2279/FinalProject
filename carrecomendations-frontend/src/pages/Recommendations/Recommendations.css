@@ -1,0 +1,35 @@
+.recommendations {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px; /* Add gap between content and footer */
+  height: -webkit-fill-available;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px; /* Space between the cards */
+  justify-content: center;
+  padding: 20px;
+}
+
+.button-container {
+  grid-column: 1 / -1; /* Span across all columns */
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add some space above the button */
+}
+
+button {
+  background-color: #6863632c;
+  color: rgb(10, 10, 10);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+} 

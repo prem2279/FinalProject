@@ -1,0 +1,50 @@
+.hero {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    position: relative;
+  z-index: 2; /* Makes sure the text appears above the overlay */
+  color: #ffffff;
+  padding: 20px;
+  background-color: #333;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin: 1rem;
+    /* text-shadow: 10px 10px 10px rgb(0, 0, 0); */
+    text-transform: uppercase;
+    font-family: cursive;
+    /* Adds shadow to text */
+}
+
+
+
+.hero p {
+    font-size: 3rem;
+    margin: 1rem;
+    /* text-shadow: 20px 20px 20px rgb(0, 0, 0); */
+    text-transform: capitalize;
+    font-family: cursive;
+}
+
+.hero button {
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.hero button:hover {
+    background-color: #e67e22;
+}

@@ -1,0 +1,78 @@
+.option-group {
+  display: flex;
+  gap: 10px;
+  
+  justify-content: center; /* Centers the options horizontally */
+}
+
+.preference-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all elements horizontally */
+  text-align: center;
+}
+
+.option {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* Ensures the image and text are stacked vertically */
+  align-items: center; /* Centers the content horizontally */
+}
+
+.option:hover {
+  border-color: #f39c12;
+}
+
+.option.selected {
+  border-color: #f39c12;
+  background-color: rgb(192, 22, 22);
+}
+
+.option img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+.option p {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(15, 14, 14);
+  text-transform: capitalize;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  font-size: 1.3rem;
+  background-color: lightgrey;
+  color: #0c0c0c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1.2rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  display: block;
+  align-self: center; /* Ensures the button is centered */
+}
+
+button:hover {
+  background-color: #070707;
+  color: white;
+}

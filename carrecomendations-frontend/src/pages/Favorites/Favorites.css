@@ -1,0 +1,26 @@
+.favorites {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    height: -webkit-fill-available;
+  }
+  
+  .car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .car-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .car-list {
+      grid-template-columns: 1fr;
+    }
+  }
